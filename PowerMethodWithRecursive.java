@@ -21,6 +21,9 @@ public class PowerMethodWithRecursive {
         if(power == 1){
             return base;
         }
+        if(power == 0){
+            return 1;
+        }
         return base * recursivePower(base, power-1);
     }
 }
